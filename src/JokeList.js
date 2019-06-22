@@ -56,14 +56,13 @@ class JokeList extends Component {
 
   handleClick() {
     this.setState({loading: true}, this.getJokes )
-    
   }
 
   render() {
     if(this.state.loading) {
       return (
         <div className="jokelist-spinner">
-          <i className="far fa-8X fa-laugh fa-spin" />
+          <i className="far fa-8x fa-laugh fa-spin" />
           <h1 className="jokelist-title">Loading...</h1>
         </div>
       )
